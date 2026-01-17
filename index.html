@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day, Mosinmiloluwa 💖</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fbecec, #ffe6f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Particle background container */
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 77, 109, 0.7);
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: floatParticle linear infinite;
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0) scale(1); opacity: 0.6; }
+      50% { transform: translateY(-50px) scale(1.2); opacity: 1; }
+      100% { transform: translateY(-100px) scale(1); opacity: 0; }
+    }
+
+    .container {
+      background: #fff;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease-in-out;
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff4d6d;
+      margin: 0 auto 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #ff4d6d;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #555;
+      position: relative;
+    }
+
+    .line {
+      opacity: 0;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .heart {
+      color: #ff4d6d;
+      animation: heartbeat 1s infinite;
+    }
+
+    .signature {
+      font-weight: 600;
+      color: #ff4d6d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      opacity: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px);} to { opacity: 1; transform: translateY(0);} }
+    @keyframes heartbeat { 0%, 100% { transform: scale(1);} 50% { transform: scale(1.3);} }
+
+    /* Heart rain & floating effect */
+    .floating-heart {
+      position: absolute;
+      font-size: 24px;
+      color: #ff4d6d;
+      pointer-events: none;
+      z-index: 1;
+      animation: floatUp linear forwards, sparkle 1.5s infinite alternate;
+      text-shadow: 0 0 6px #ff4d6d, 0 0 12px #ff85a2, 0 0 18px #ff4d6d;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+    }
+
+    @keyframes sparkle {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Cursor sparkle trail */
+    .sparkle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(255, 77, 109, 0.9);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0.9;
+      box-shadow: 0 0 6px #ff4d6d, 0 0 12px #ff85a2;
+      animation: sparkleMove 1s linear forwards;
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-40px) scale(0.5); opacity: 0; }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container { padding: 30px 20px; }
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+      .profile-pic { width: 90px; height: 90px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles"></div>
+
+  <div class="container">
+    <!-- Profile Picture -->
+    <img src="m.png" alt="Mosinmiloluwa" class="profile-pic">
+
+    <!-- Header -->
+    <h1>Happy Valentine’s Day, Mosinmiloluwa <i class="fa-solid fa-heart heart"></i></h1>
+
+    <!-- Message -->
+    <p>
+      <span class="line">I was trying to think of a simple way to say this… but simple didn’t feel like enough 😅</span>
+      <span class="line">There’s something about you that just stands out naturally — and it definitely caught my attention.</span>
+      <span class="line">I won’t make this long, but I will make it honest: you’re beautiful, your vibe is special, and I’d really like to get to know you better.</span>
+      <span class="line">No pressure, no rush — just good energy and a little curiosity 😉</span>
+      <span class="line">Happy Valentine’s Day 💖</span>
+    </p>
+
+    <!-- Signature -->
+    <div class="signature"><i class="fa-regular fa-envelope"></i> — Diamond</div>
+  </div>
+
+  <script>
+    // Line-by-line text animation
+    const lines = document.querySelectorAll('.line');
+    const signature = document.querySelector('.signature');
+    lines.forEach((line, index) => {
+      setTimeout(() => {
+        line.style.transition = 'opacity 0.8s';
+        line.style.opacity = 1;
+      }, 1000 * index);
+    });
+    setTimeout(() => {
+      signature.style.transition = 'opacity 1s';
+      signature.style.opacity = 1;
+    }, 1000 * lines.length + 200);
+
+    // Floating hearts function
+    function createHeart(x, y, size = 20, duration = 4) {
+      const heart = document.createElement('i');
+      heart.className = 'fa-solid fa-heart floating-heart';
+      heart.style.left = x + 'px';
+      heart.style.top = y + 'px';
+      heart.style.fontSize = size + 'px';
+      heart.style.animationDuration = duration + 's, 1.5s';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), duration * 1000);
+    }
+
+    // Click hearts
+    document.addEventListener('click', e => createHeart(e.clientX, e.clientY));
+
+    // Random floating hearts near container
+    setInterval(() => {
+      const container = document.querySelector('.container');
+      const rect = container.getBoundingClientRect();
+      const x = rect.left + Math.random() * rect.width;
+      const y = rect.top + Math.random() * rect.height;
+      createHeart(x, y, 12 + Math.random() * 20, 3 + Math.random() * 3);
+    }, 600);
+
+    // Cursor-follow hearts
+    document.addEventListener('mousemove', function(e) {
+      createHeart(e.clientX + Math.random()*20 - 10, e.clientY + Math.random()*20 - 10, 8 + Math.random()*12, 2 + Math.random()*2);
+    });
+
+    // Particle background
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 80; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * window.innerWidth + 'px';
+      particle.style.top = Math.random() * window.innerHeight + 'px';
+      particle.style.width = particle.style.height = (Math.random() * 4 + 2) + 'px';
+      particle.style.animationDuration = (3 + Math.random() * 3) + 's';
+      particlesContainer.appendChild(particle);
+    }
+
+    // Cursor sparkle trail
+    document.addEventListener('mousemove', function(e) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = e.clientX + 'px';
+      sparkle.style.top = e.clientY + 'px';
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 1000);
+    });
+  </script>
+</body>
+</html>
